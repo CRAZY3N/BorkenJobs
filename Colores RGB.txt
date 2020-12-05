@@ -1,0 +1,18 @@
+enviar  : #93278F
+mas info
+-----------------------
+Titulo:    #1B1464
+Soluciones
+contacto
+nosotros
+portafolio
+-----------------------
+Footer: #34009C
+-----------------------
+texto  : #000000
+Contacto
+portafolio
+nostros
+-----------------------
+seleccionador de
+menu : #34009C
