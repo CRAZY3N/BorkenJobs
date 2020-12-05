@@ -48,7 +48,7 @@
             </div>
 
             <div class="contacto-formulario">
-                <form action="#" method="post">
+                <form action="inc/correo.php" method="post">
                     <div class="campo">
                         <label for="nombre">Nombre:</label>
                         <input type="text" name="nombre" id="nomber" placeholder="Ingresa tu nombre" required>
@@ -71,10 +71,10 @@
 
                     <div class="campo">
                         <label for="mensaje">Mensaje:</label>
-                        <textarea name="mensaje" id="mensaje"></textarea>
+                        <textarea name="mensaje" id="mensaje" required></textarea>
                     </div>
                     <p class="tc">Estamos a tu servicio si deseas más información o si tienes alguna duda al respecto, nuestros nos comunicaremos contigo.</p>
-                    <input type="submit" value="Enviar" class="btn btn-main" id="enviar">
+                    <input type="submit" value="Enviar" class="btn btn-main" id="enviar" name="enviar">
                 </form>
             </div>
 
@@ -84,10 +84,26 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-conte contenedor g mg-2 g-4 pg">
-            <div class="footer-item"><a class="fb" href="#"><i class="fab fa-facebook-square"></i> BrokenJobs</a></div>
-            <div class="footer-item"><a class="in" href="#"><i class="fab fa-instagram"></i> @BrokenJobd</a></div>
-            <div class="footer-item"><a class="lin" href="#"><i class="fab fa-linkedin"></i> BrokenJobs</a></div>
-            <div class="footer-item"><a class="mail" href="#"><i class="fas fa-envelope"></i> info@brokenjobs.com.mx</a></div>
+            <div class="footer-item"> <a href="index.html"><img src="img/Logo.png" alt="Logo"></a> </div>
+            <div class="footer-item">
+                <h4 class="tc">Broken Jobs</h4>
+                <p class="tc">Desarrollo de Paginas Web</p>
+                <p class="tc">Diseño de Paginas Web</p>
+                <p class="tc">Diseño de Logotipos</p>
+                <p class="tc"></p>
+            </div>
+            <div class="footer-item">
+                <h4 class="tc">Redes Sociales</h4>
+                <a class="fb" href="#"><i class="fab fa-facebook-square"></i> BrokenJobs</a>
+                <a class="in" href="#"><i class="fab fa-instagram"></i> @BrokenJobd</a>
+                <a class="lin" href="#"><i class="fab fa-linkedin"></i> BrokenJobs</a>
+                
+            </div>
+            <div class="footer-item">
+                <h4 class="tc">Contactanos</h4>
+                <a href="https://api.whatsapp.com/send?phone=+525621890948"><i class="fas fa-phone-square-alt"> +52 56 2189 0948</i></a>
+                <a class="mail" href="mailto:info@brokenjobs.com.mx"><i class="fas fa-envelope"> info@brokenjobs.com.mx</i></a>
+            </div>
         </div>
     </footer>
 
