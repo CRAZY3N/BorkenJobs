@@ -26,6 +26,7 @@ window.onload = function(){
             slidesToShow: 1,
             dots: '#dots01',
             draggable: true,
+            rewind: true,
             arrows: {
               prev: '#glider-prev01',
               next: '#glider-next01'
@@ -55,6 +56,7 @@ window.onload = function(){
           slidesToShow: 1,
           dots: '#dots03',
           draggable: true,
+          rewind: true,
           rewind: true,
           arrows: {
             prev: '#glider-prev03',
