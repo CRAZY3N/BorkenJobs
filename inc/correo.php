@@ -26,30 +26,31 @@ if(isset($_POST)){
 
     $headers  = 'MIME-Version: 1.0' . "\r\n"
     .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $correo . "\r\n";
+    .'From: noreplay@brokenjobs.com.mx \r\n';
 
-    $msj = "Nombre: " . $nombre;
-    $msj .= "Empresa: " . $empresa . " \r\n ";
-    $msj .= "Teléfono: " . $telefono . " \r\n ";
-    $msj .= "Correo: " . $correo . " \r\n ";
-    $msj .= "Mensaje: " . $mensaje  . " \r\n ";
+    $msj = "Nombre: " . $nombre . " \n \r\n ";
+    $msj .= "Empresa: " . $empresa . " \n \r\n ";
+    $msj .= "Teléfono: " . $telefono . " \n \r\n ";
+    $msj .= "Correo: " . $correo . " \n \r\n ";
+    $msj .= "Mensaje: " . $mensaje  . " \n \r\n ";
 
-    $mail = "info@brokenjobs.com.mx";
+    $mail = "info@brokenjobs.com.mx," . $correo;
 
     $asunto = "Mensaje de " . $nombre . "Desde sitio Web";
 
     if(mail($mail, $asunto, $msj, $headers)){
-        echo '<p class="tc"> Gracias, se ha enviado correctamente <a class="btn btn-main" href="https://brokenjobs.com.mx"> Volver a inicio </a> </p>';
         header("Location: https://brokenjobs.com.mx");
+        echo '<p class="tc"> Gracias, se ha enviado correctamente, nos pondremos en contacto lo antes posible </p> <p class="tc"> <a class="btn btn-main" href="https://brokenjobs.com.mx"> Volver a inicio </a> </p>';
         die();
     } else {
-        echo '<p class="tc"> Hubo un error al enviar mensaje, si es posible comunicarse con el administrado </p>';
         header("Location: contacto.php");
+        echo '<p class="tc"> Hubo un error al enviar mensaje, si es posible comunicarse con el administrado </p> <p class="tc"> <a class="btn btn-main" href="https://brokenjobs.com.mx"> Volver a inicio </a> </p>';
     }
 
 } else {
-    echo '<p class="tc"> Hubo un erro </p>';
+    echo '<p class="tc"> Hubo un erro </p> <p class="tc"> <a class="btn btn-main" href="https://brokenjobs.com.mx"> Volver a inicio </a> </p>';
     header("Location: contacto.php");
+    die();
 }
 
 ?>
