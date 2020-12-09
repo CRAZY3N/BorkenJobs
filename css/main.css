@@ -106,6 +106,7 @@ img{width: 100%;}
 
 /* Meu Movil */
 .menu-movil{
+    transition: all 0.5s ease;
     color: #742894;
     padding: 2rem 1rem;
     font-size: 4rem;
@@ -118,6 +119,7 @@ img{width: 100%;}
     width: 125%;
     margin: 0 auto;
     text-align: center;
+    transition: all 0.5s ease;
 }
 .nav a{
     font-size: 2rem;
