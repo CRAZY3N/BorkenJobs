@@ -43,7 +43,7 @@ if(isset($_POST)){
 
     $mail = "info@brokenjobs.com.mx," . $correo;
 
-    $asunto = "Mensaje de " . $nombre . "Desde sitio Web";
+    $asunto = "Mensaje de " . $nombre . " Desde sitio Web";
 
     if(mail($mail, $asunto, $msj, $headers)){
         header("Location: https://brokenjobs.com.mx");
