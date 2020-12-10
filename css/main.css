@@ -27,7 +27,7 @@ html{
 h1{font-size: 3.8rem;}
 h2{font-size: 3.2rem;}
 h3{font-size: 2.8rem;}
-h4{font-size: 2.5rem;}
+h4{font-size: 2.2rem;}
 p,a,li{font-size: 1.5rem;}
 a{text-decoration: none;}
 
@@ -318,6 +318,11 @@ img{width: 100%;}
 }
 .mContacto h4, .mContacto p, .mContacto a{margin: 2rem auto;}
 
+@media only screen and (min-width: 768px) {
+    .mContacto{}
+    .mContacto h4, .mContacto p, .mContacto a{margin: 4rem auto;}
+}
+
 /* Footer */
 .footer{
     padding: 2rem 1rem;
@@ -342,6 +347,8 @@ img{width: 100%;}
     font-weight: 400;
 }
 
+.footer-item p a{font-weight: 700;}
+
 .fb{color: #3b5998;}
 
 .maker{
@@ -356,7 +363,10 @@ img{width: 100%;}
 }
 
 /* Pagina nosotros */
-.nosotros{}
+.nosotros{
+    margin: 2rem auto;
+    padding: 2rem 0;
+}
 
 .nosotros-img{}
 
@@ -367,7 +377,10 @@ img{width: 100%;}
 .nosotros-contenido p{margin: 2rem auto;}
 
 /* Modelos */
-.modelos{}
+.cont-hero{padding: 2rem 0;}
+.cont-hero h1, .cont-hero p{margin: 1rem auto;}
+
+.modelos{padding: 2rem 0;}
 .modelo{margin: 2rem auto;}
 .modelo a{color: var(--second);}
 .modelo a h4{margin: 1rem auto;}
@@ -380,11 +393,23 @@ img{width: 100%;}
     background-size: cover;
     background-repeat: no-repeat;
 }
+.contacto h1, .contacto h3{color: var(--third)}
 
 .clogo{margin-top: -2rem;}
-.contacto-info{color: var(--third);}
-.contacto-formulario{margin: 5rem auto;}
+.contacto-info{}
+.contacto-info h2, .contacto-info h3{
+    color: var(--third);
+    margin: 2rem auto;
+}
+.contacto-formulario{
+    margin: 5rem auto;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    border: 0.1rem solid var(--primary);
+    box-shadow: 0rem 0rem 3rem #000000;
+}
 .campo{
+    padding: 0.5rem 1rem;
     font-size: 1.5rem;
     display: grid;
     grid-template-columns: 20% 80%;

@@ -68,4 +68,20 @@ window.onload = function(){
         });
 
     }
+
+    /* Slider PC */
+    /* Slider, Paquetes */
+    new Glider(document.getElementById('glider-single01'), {
+      slidesToShow: 3,
+      dots: '#dots01',
+      draggable: true,
+      rewind: true,
+      arrows: {
+        prev: '#glider-prev01',
+        next: '#glider-next01'
+      },
+      easing: function (x, t, b, c, d) {
+        return c*(t/=d)*t + b;
+      }
+    });
 }
