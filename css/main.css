@@ -80,6 +80,12 @@ img{width: 100%;}
     background: var(--primary);
 }
 
+/* No mostrar */
+
+@media only screen and (min-width: 768px) {
+    .ns{display: none;}
+}
+
 /* Section */
 /* Header */
 .header{
@@ -206,7 +212,20 @@ img{width: 100%;}
     padding: 2rem 0;
     background: var(--third);
 }
-.paq-componente{padding: 2rem 0.5rem;}
+.paquetes h3{
+    border-top: 0.1rem solid #FFFFFF;
+    padding: 1rem 0;
+    margin: 1rem auto;
+}
+.paquetes-contendido{}
+
+.paq-componente{
+    border-radius: 3rem;
+    box-shadow: 0rem 0rem 1.5rem var(--second);
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    padding: 2rem 1rem;
+    margin: 1rem;
+}
 .paq-componente p{font-size: 1.5rem;}
 .paq-componente p i{
     padding: 1rem;
@@ -234,12 +253,32 @@ img{width: 100%;}
     border-top: 0.2rem solid #FFFFFF;
 }
 
+/* Paquetes de diseño web */
+.paquetes-dos{}
+.paq-dos{padding: 1rem;}
+.paq-dos p{
+    padding: 0.5rem 0;
+    text-align: left;
+    padding: 0.5rem;
+}
+.paq-dos p i{font-size: 2.5rem;}
+/* Diseño gráfico */
+
+/* Community manager */
+
 
 @media only screen and (min-width: 768px) {
+    .paquetes{}
+    .paquetes-contendido{}
     .flechas{display: none;}
     .info-paquetes{}
     .info-paquete{}
-    .info-paquete p{}   
+    .info-paquete p{}  
+    .paq-dos{}
+    .paq-dos p{
+        margin-left: 4rem;
+        text-align: left;
+    } 
 }
 
 /* Portafolios */
@@ -423,4 +462,83 @@ img{width: 100%;}
     .contacto-info{margin: 5rem auto;}
     .contacto-formulario{}
 }
+
+/* Página servios */
+.hero-ser{
+    margin-top: -2rem;
+    margin-bottom: -1rem;
+    padding: 2rem 0;
+    background-image: linear-gradient(135deg, rgba(245, 247, 250, 0.8) 0%, rgba(195, 207, 226, 0.8) 100%), url('../img/ser.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .hero-ser{padding: 8rem 0;}
+}
+
+/* Servicios */
+.servicios{padding: 4rem 0;}
+.cont-ser{padding: 2rem 0;}
+.cont-ser p{padding: 2rem;}
+.cont-ser span{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.cont-ser-img{
+    border-top: 0.3rem solid var(--primary);
+    border-bottom: 0.3rem solid var(--primary);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+}
+
+.cont-ser01{}
+.paginas{}
+.community{}
+.diseno{}
+
+.ser-item{
+    background: #f5f5f5;
+    margin: 2rem 0.5rem;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    border: 0.1rem solid var(--second);
+    box-shadow: 0rem 0rem 1.5rem var(--third);
+}
+
+
+@media only screen and (min-width: 768px) {
+    .servicios{}
+    .cont-ser{
+        margin: 1rem auto;
+        border: 0.1rem solid var(--primary);
+        padding: 4rem 0rem;
+    }
+    .cont-ser-img{
+        border: none;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0.5rem;
+    }
+    .cont-ser01{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .cont-ser02{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .ser-item{
+        margin: 2rem 0rem;
+        padding: 0.5rem;
+    }
+    .paginas{}
+    .community{}
+    .diseno{}
+}
+
+
 /* IDs */
