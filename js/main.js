@@ -21,7 +21,6 @@ window.onload = function(){
   });
 
   /* Sliders para index */
-  if(window.location.pathname == '/index.html'){
     /* Slider, Paquetes */
     new Glider(document.getElementById('glider-single01'), {
       slidesToShow: 1,
@@ -67,13 +66,12 @@ window.onload = function(){
       return c*(t/=d)*t + b;
     }
   });
-  }
 
     }
 
     /* Slider PC */
     /* Slider, Paquetes */
-    if(window.location.pathname == '/index.html'){
+
       new Glider(document.getElementById('glider-single01'), {
         slidesToShow: 3,
         dots: '#dots01',
@@ -87,7 +85,7 @@ window.onload = function(){
           return c*(t/=d)*t + b;
         }
       });
-    }
+
     
     
 
