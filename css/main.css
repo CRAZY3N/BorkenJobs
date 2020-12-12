@@ -229,7 +229,8 @@ img{width: 100%;}
 .paq-componente p{font-size: 1.5rem;}
 .paq-componente p i{
     padding: 1rem;
-    font-size: 5rem;
+    font-size: 6rem;
+    font-weight: normal;
 }
 
 /* Información paquetes */
@@ -364,6 +365,7 @@ img{width: 100%;}
 
 /* Footer */
 .footer{
+    font-size: 1rem;
     padding: 2rem 1rem;
     background: var(--third);
 }
@@ -372,8 +374,11 @@ img{width: 100%;}
     margin: 1rem auto;
     color: #FFFFFF;
 }
-.footer-item h4, .footer-item p, .footer-item a{margin: 1rem;}
-
+.footer-item h4, .footer-item p, .footer-item a{margin: 1rem auto;}
+.footer-item h4 a{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
 .footer-item img{
     width: 10rem;
     height: 10rem;
@@ -426,7 +431,7 @@ img{width: 100%;}
 
 /* Contacto */
 .contacto{
-    padding: 7rem 1rem;
+    padding: 7rem 0;
     background-image: linear-gradient(to top, rgba(207, 217, 223, 0.3) 0%, rgba(226, 235, 240, 0.3) 100%), url('../img/back2.svg');
     background-position: center;
     background-size: cover;
@@ -442,17 +447,16 @@ img{width: 100%;}
 }
 .contacto-formulario{
     margin: 5rem auto;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     border-radius: 3rem;
     border: 0.1rem solid var(--primary);
     box-shadow: 0rem 0rem 3rem #000000;
 }
 .campo{
+    width: 90%;
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
-    display: grid;
     grid-template-columns: 20% 80%;
-    column-gap: 2rem;
     margin: 1rem auto;
 }
 .campo input[type="text"], .campo input[type="tel"], .campo input[type="email"], .campo textarea{ padding: 1rem;}
